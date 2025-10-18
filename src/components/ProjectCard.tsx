@@ -1,6 +1,7 @@
 import { Project } from '@/data/projects';
 import { CodeBracketIcon, EyeIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface ProjectCardProps {
   project: Project;
@@ -11,10 +12,13 @@ export default function ProjectCard({ project }: ProjectCardProps) {
     <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-transform hover:scale-105">
       <div className="h-48 bg-gray-200 dark:bg-gray-700">
         {project.imageUrl ? (
-          <img
+          <Image
             src={project.imageUrl}
             alt={project.title}
+            width={400}
+            height={192}
             className="w-full h-full object-cover"
+            priority
           />
         ) : (
           <div className="w-full h-full flex items-center justify-center bg-gray-100 dark:bg-gray-700">

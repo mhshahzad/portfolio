@@ -46,7 +46,7 @@ export default function Home() {
             </h2>
             <div className="prose prose-lg dark:prose-invert max-w-none">
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-                I'm a passionate Full Stack Developer with expertise in modern web technologies.
+                I&apos;m a passionate Full Stack Developer with expertise in modern web technologies.
                 I love building beautiful, responsive, and user-friendly applications that solve real-world problems.
               </p>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">

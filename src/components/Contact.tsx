@@ -7,7 +7,7 @@ export default function Contact() {
             Get In Touch
           </h2>
           <p className="mt-4 text-xl text-gray-600 dark:text-gray-300">
-            Have a project in mind or want to collaborate? Let's talk!
+            Have a project in mind or want to collaborate? Let&apos;s talk!
           </p>
         </div>
         

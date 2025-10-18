@@ -3,7 +3,7 @@ export default function Hero() {
     <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-800 px-4">
       <div className="w-full max-w-4xl mx-auto text-center">
         <h1 className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-6">
-          Hi, I'm <span className="text-primary hover:text-primary-dark transition-colors">Muhammad</span>
+          Hi, I&apos;m <span className="text-primary hover:text-primary-dark transition-colors">Muhammad</span>
         </h1>
         <h2 className="text-2xl md:text-3xl text-gray-600 dark:text-gray-300 mb-8">
           Full Stack Developer
