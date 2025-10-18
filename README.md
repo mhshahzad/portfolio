@@ -149,7 +149,7 @@ Contributions are welcome! Please follow these steps:
 
 ## 📬 Contact
 
-Have questions or suggestions? Open an issue or reach out to [mh.shahzad@outlook.com](mailto:mh.shahzad@outlook.com).
+Have questions or suggestions? Open an issue or reach out to [muhammad@mhshahzad.tech](mailto:muhammad@mhshahzad.tech).
 
 ## 📄 License
 
