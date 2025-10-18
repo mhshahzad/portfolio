@@ -1,4 +1,4 @@
-# Muhammad Hamza Shahzad - Portfolio
+# Modern Portfolio Template
 
 A modern, responsive, and customizable portfolio template built with Next.js, Tailwind CSS, and TypeScript. This template is designed to help developers showcase their work and skills with a clean, professional design.
 
@@ -20,108 +20,144 @@ A modern, responsive, and customizable portfolio template built with Next.js, Ta
 ### Prerequisites
 
 - Node.js 18.0.0 or later
-- npm or yarn
+- npm (v7+) or yarn (v1.22+)
+- Git
 
-### Installation
+### Quick Start
 
-1. **Clone the repository**
+1. **Fork this repository**
+   - Click the "Fork" button at the top-right of this page
+
+2. **Clone your forked repository**
    ```bash
-   git clone https://github.com/mhshahzad/portfolio.git
+   git clone https://github.com/YOUR-USERNAME/portfolio.git
    cd portfolio
    ```
 
-2. **Install dependencies**
+3. **Install dependencies**
    ```bash
    npm install
    # or
    yarn
    ```
 
-3. **Start the development server**
+4. **Start the development server**
    ```bash
    npm run dev
    # or
    yarn dev
    ```
 
-4. **Open [http://localhost:3000](http://localhost:3000) in your browser**
+5. **Open [http://localhost:3000](http://localhost:3000) in your browser**
+
+6. **Start customizing!**
+   - Update your personal information in the components
+   - Add your projects to `src/data/projects.ts`
+   - Customize colors in `tailwind.config.js`
 
 ## 🎨 Customization
 
-### Update Personal Information
+### 1. Personal Information
 
-Edit the following files to update your personal information:
-- `src/app/layout.tsx` - Update site metadata, title, and description
-- `src/components/Header.tsx` - Update navigation links
-- `src/components/Hero.tsx` - Update your introduction
-- `src/components/Footer.tsx` - Update footer information
+Update your personal details in these files:
+- `src/app/layout.tsx` - Site metadata and SEO settings
+- `src/components/Hero.tsx` - Your name, title, and introduction
+- `src/components/Footer.tsx` - Copyright and social links
+- `package.json` - Project metadata and author information
 
-### Change Colors
+### 2. Projects
 
-Edit the `tailwind.config.js` file to customize the color scheme:
+Edit `src/data/projects.ts` to add your projects:
+```typescript
+export const projects = [
+  {
+    title: 'Project Name',
+    description: 'Brief description of your project',
+    tags: ['React', 'Next.js', 'TypeScript'],
+    imageUrl: '/images/projects/example.jpg',
+    githubUrl: 'https://github.com/yourusername/project',
+    liveUrl: 'https://project-demo.com',
+  },
+  // Add more projects...
+];
+```
 
+### 3. Styling
+
+Customize the design in `tailwind.config.js`:
 ```javascript
-// tailwind.config.js
 module.exports = {
   theme: {
     extend: {
       colors: {
-        // Update these colors to match your brand
         primary: {
-          DEFAULT: '#2563EB',
+          DEFAULT: '#2563EB', // Change this to your brand color
           dark: '#1D4ED8',
           light: '#60A5FA',
         },
-        // ... other color customizations
+        // Add more custom colors...
       },
     },
   },
 };
 ```
 
-### Add/Modify Sections
+### 4. Dark Mode
 
-Each section of the portfolio is a separate component in the `src/components` directory. You can add, remove, or modify these components as needed.
+This template includes built-in dark mode. Toggle it using the button in the header.
 
-## 📦 Deployment
+## 🚀 Deployment
 
 ### Vercel (Recommended)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fmhshahzad%2Fportfolio)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fmhshahzad%2Fportfolio&project-name=my-portfolio&repository-name=portfolio)
 
-### Netlify
+1. Click the "Deploy" button above
+2. Sign in with your GitHub account
+3. Follow the on-screen instructions
+4. Your portfolio will be live at `https://your-username.vercel.app`
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/mhshahzad/portfolio)
+### GitHub Pages
 
-## 📝 License
+1. Update `next.config.js` with your repository name:
+   ```javascript
+   const nextConfig = {
+     basePath: process.env.NODE_ENV === 'production' ? '/repository-name' : '',
+     assetPrefix: process.env.NODE_ENV === 'production' ? '/repository-name/' : '',
+   };
+   ```
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+2. Run the build command:
+   ```bash
+   npm run build
+   ```
+
+3. Push the code to GitHub
+4. Go to Repository Settings > Pages
+5. Select `gh-pages` branch and `root` folder
+6. Click "Save"
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md) to get started.
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 ## 📬 Contact
 
 Have questions or suggestions? Open an issue or reach out to [mh.shahzad@outlook.com](mailto:mh.shahzad@outlook.com).
 
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 ---
 
-Built with ❤️ by [Muhammad Hamza Shahzad](https://mhshahzad.tech)
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Built with ❤️ by [Muhammad Hamza Shahzad](https://mhshahzad.tech)  
+Using [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/), and [TypeScript](https://www.typescriptlang.org/)
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
