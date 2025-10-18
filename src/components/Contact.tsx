@@ -66,7 +66,7 @@ export default function Contact() {
             <div className="flex justify-end">
               <button
                 type="submit"
-                className="px-8 py-3 bg-primary text-white rounded-lg font-medium hover:bg-primary-dark transition-colors shadow-md hover:shadow-lg flex items-center"
+                className="px-8 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors shadow-md hover:shadow-lg flex items-center"
               >
                 <span>Send Message</span>
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">

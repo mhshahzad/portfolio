@@ -15,7 +15,7 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
           <a
             href="#projects"
-            className="w-full sm:w-auto px-8 py-3 bg-primary text-white rounded-lg font-medium hover:bg-primary-dark transition-colors shadow-md hover:shadow-lg"
+            className="w-full sm:w-auto px-8 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors shadow-md hover:shadow-lg"
           >
             View My Work
           </a>

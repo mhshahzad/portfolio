@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import Link from 'next/link';
 import './globals.css';
 
 const inter = Inter({
@@ -31,11 +32,11 @@ export const metadata: Metadata = {
     url: 'https://mhshahzad.tech',
     siteName: 'Muhammad Hamza Shahzad Portfolio',
   },
+  // Twitter card uses OpenGraph data by default
   twitter: {
     card: 'summary_large_image',
-    title: 'Your Name | Portfolio',
+    title: 'Muhammad Hamza Shahzad | Portfolio',
     description: 'Personal portfolio showcasing my projects and skills',
-    creator: '@hamzaali',
   },
 };
 

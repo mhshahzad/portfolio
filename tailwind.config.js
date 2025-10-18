@@ -27,6 +27,9 @@ module.exports = {
           dark: '#1D4ED8',
           light: '#60A5FA',
         },
+        // Add primary color as a direct color
+        'primary-600': '#2563EB',
+        'primary-700': '#1D4ED8',
         // Secondary color (teal)
         secondary: {
           50: '#F0FDFA',
