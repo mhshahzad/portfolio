@@ -15,6 +15,17 @@ A modern, responsive, and customizable portfolio template built with Next.js, Ta
 - 📊 Analytics ready
 - 🛠 Easy customization
 
+## 🎨 Theme Preview
+
+<div style="text-align: center; margin: 2rem 0;">
+  <img 
+    src="/public/images/dark-theme.png" 
+    alt="Portfolio Dark Theme Preview" 
+    style="max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.3), 0 8px 10px -6px rgba(0,0,0,0.2);"
+  />
+  <p style="margin-top: 1rem; color: #9CA3AF; font-size: 0.9rem;">Dark theme shown (auto-switches based on system preferences)</p>
+</div>
+
 ## 🛠 Getting Started
 
 ### Prerequisites
