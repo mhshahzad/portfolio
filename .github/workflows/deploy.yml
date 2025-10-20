@@ -34,6 +34,6 @@ jobs:
           folder: out
           branch: gh-pages
           clean: true
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           repository-name: ${{ github.repository }}
           single-commit: true
