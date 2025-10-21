@@ -2,8 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
   output: 'export',
-  basePath: process.env.NODE_ENV === 'production' ? '/portfolio' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/portfolio/' : '',
+  // Remove basePath and assetPrefix for custom domain
+  basePath: '',
+  assetPrefix: '',
   images: {
     unoptimized: true,
     domains: ['images.unsplash.com'],
@@ -17,6 +18,12 @@ const nextConfig = {
     };
     return config;
   },
+  // Ensure CSS is properly loaded
+  experimental: {
+    optimizeCss: true,
+  },
+  // Add trailing slash for GitHub Pages compatibility
+  trailingSlash: true,
 };
 
 module.exports = nextConfig;

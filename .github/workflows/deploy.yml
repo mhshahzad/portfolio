@@ -46,6 +46,8 @@ jobs:
         run: |
           npm run build
           npm run export
+          # Ensure _next directory is properly copied
+          cp -r .next/static out/_next/static
           
       - name: Setup Pages
         uses: actions/configure-pages@v4
