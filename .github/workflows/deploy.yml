@@ -35,12 +35,12 @@ jobs:
           
       - name: Install dependencies
         run: |
-          # Install husky first
-          npm install -D husky
-          # Then install other dependencies
-          npm ci --no-audit --prefer-offline
-          # Ensure husky is properly set up
-          npx husky install
+          # Temporarily remove husky from package.json to prevent prepare script from running
+          npm pkg delete scripts.prepare
+          # Install dependencies without husky
+          npm ci --no-audit --prefer-offline --ignore-scripts
+          # Re-add the prepare script for local development
+          npm pkg set scripts.prepare="husky install"
         
       - name: Build
         run: |
