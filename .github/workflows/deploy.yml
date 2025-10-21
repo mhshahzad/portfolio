@@ -34,7 +34,10 @@ jobs:
           cache: 'npm'
           
       - name: Install dependencies
-        run: npm ci
+        run: |
+          npm ci --no-audit --prefer-offline
+          # Disable husky in CI
+          npm pkg delete scripts.prepare
         
       - name: Build
         run: |
