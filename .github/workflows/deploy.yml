@@ -44,10 +44,24 @@ jobs:
         
       - name: Build
         run: |
+          # Clean previous builds
+          rm -rf .next out
+          
+          # Install dependencies properly
+          npm ci --no-audit --prefer-offline
+          
+          # Build the application
           npm run build
+          
+          # Export to static files
           npm run export
-          # Ensure _next directory is properly copied
-          cp -r .next/static out/_next/static
+          
+          # Ensure proper permissions
+          chmod -R 755 out/
+          
+          # Create necessary directories and copy files
+          mkdir -p out/_next/static
+          [ -d .next/static ] && cp -r .next/static out/_next/ || true
           
       - name: Setup Pages
         uses: actions/configure-pages@v4
