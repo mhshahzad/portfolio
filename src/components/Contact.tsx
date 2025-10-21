@@ -80,7 +80,7 @@ export default function Contact() {
             <div className="text-center">
               <p className="text-gray-600 dark:text-gray-300 mb-4">Or reach out directly at:</p>
               <a
-                href="mailto:mh.shahzad@outlook.com"
+                href="mailto:muhammad@mhshahzad.tech"
                 className="text-lg font-medium text-primary hover:text-primary-dark transition-colors flex items-center justify-center"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
