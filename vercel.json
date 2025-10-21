@@ -30,6 +30,5 @@
       "permanent": true
     }
   ],
-  "trailingSlash": false,
-  "output": "standalone"
+  "trailingSlash": false
 }
