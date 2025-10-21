@@ -15,7 +15,6 @@
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --write .",
-    "prepare": "husky install",
     "export": "next build && touch out/.nojekyll",
     "predeploy": "npm run build && npm run export",
     "deploy": "gh-pages -d out"
