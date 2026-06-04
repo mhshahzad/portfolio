@@ -2,7 +2,7 @@
 
 A modern, responsive, and customizable portfolio template built with Next.js, Tailwind CSS, and TypeScript. This template is designed to help developers showcase their work and skills with a clean, professional design.
 
-![Portfolio Screenshot](/public/images/screenshot.png)
+![Portfolio Screenshot](/public/images/light.png)
 
 ## 🚀 Features
 
@@ -19,7 +19,7 @@ A modern, responsive, and customizable portfolio template built with Next.js, Ta
 
 <div style="text-align: center; margin: 2rem 0;">
   <img 
-    src="/public/images/dark-theme.png" 
+    src="/public/images/dark.png" 
     alt="Portfolio Dark Theme Preview" 
     style="max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.3), 0 8px 10px -6px rgba(0,0,0,0.2);"
   />
